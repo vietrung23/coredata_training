@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol AddViewControllerDelegate {
+    func addViewController(_ controller: AddViewController, didFinishWith save: Bool)
+}
+
 class AddViewController: UIViewController {
 
     override func viewDidLoad() {
